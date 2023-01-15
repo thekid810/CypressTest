@@ -18,12 +18,5 @@ Structure of this Project
 5. Report will put in “cucumberReports” folder
 
 Command to run test: 
-1. Copy Project to this folder “/Users/YourUser/Automation”
-2. Open Terminal and execute following those command:
-    1. “cd /Users/YourUser/Automation/PracticeTest” → This step navigate the path of project
-    2. “npx cypress run --spec cypress/integration/googlePractice/*.feature” → This step will run automation test
-    3. “node cucumber-html-report.js” → This step will convert json report to html report
-    4. “open /Users/YourUser/Automation/PracticeTest/cypress/cucumberReports/report.html/index.html” → this step will open the report in web browser
-Note: Replace YourUser above commands by your user that you put Project in.
-
-Important: Pls follow the steps in this link if the report can not be showed “[https://github.com/cucumber/json-formatter/issues/24](https://github.com/cucumber/json-formatter/issues/24)”
+1. Copy/download Project to this folder your PC
+2. Open terminal(in MacOS) or cmd(in Window)) and change directory to folder that contain project then type this command:npm run scenario

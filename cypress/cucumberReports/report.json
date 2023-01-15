@@ -14,7 +14,7 @@
             "line": 3,
             "name": "I am at google home page",
             "result": {
-              "duration": 1216000000,
+              "duration": 1288000000,
               "status": "passed"
             },
             "match": {
@@ -26,7 +26,7 @@
             "line": 4,
             "name": "I enter keyword and press enter",
             "result": {
-              "duration": 8077000000,
+              "duration": 9240000000,
               "status": "passed"
             },
             "match": {
@@ -38,7 +38,7 @@
             "line": 5,
             "name": "The result will show",
             "result": {
-              "duration": 50000000,
+              "duration": 162000000,
               "status": "passed"
             },
             "match": {
