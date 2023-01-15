@@ -10,7 +10,6 @@
     "json": {
       "enabled": true,
       "output": "cypress/cucumberReports/report.json",
-      "formater": "cucumber-json-formatter"
     }
   },
   "author": "",
