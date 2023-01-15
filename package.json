@@ -9,7 +9,7 @@
   "cypress-cucumber-preprocessor": {
     "json": {
       "enabled": true,
-      "output": "cypress/cucumberReports/report.json",
+      "output": "cypress/cucumberReports/report.json"
     }
   },
   "author": "",
