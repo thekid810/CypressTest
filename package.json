@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "openCypress": "node_modules/.bin/cypress open",
     "runTestcase": "npx cypress run --record --key fa4f0e00-8ffa-4f59-ac6b-78c200b08228",
     "runTestcaseInLocal": "npx cypress run --spec cypress/integration/googlePractice/*.feature",
     "generateReport": "node cucumber-html-report.js",
