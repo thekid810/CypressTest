@@ -20,7 +20,8 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "cypress": "^12.3.0"
+    "cypress": "^12.3.0",
+    "cypress-cucumber-attach-screenshots-to-failed-steps": "^1.0.0"
   },
   "dependencies": {
     "@badeball/cypress-cucumber-preprocessor": "^15.1.1",
