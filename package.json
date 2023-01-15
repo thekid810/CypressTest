@@ -5,14 +5,15 @@
   "main": "index.js",
   "scripts": {
     "runTestcase": "npx cypress run --record --key fa4f0e00-8ffa-4f59-ac6b-78c200b08228",
+    "runTestcaseInLocal": "npx cypress run --spec cypress/integration/googlePractice/*.feature",
     "generateReport": "node cucumber-html-report.js",
-    "openReport": "open cypress/cucumberReports/report.html/index.html",
+    "openReport": "open cypress/reports/cucumberReport/index.html",
     "scenario": "run-s runTestcase generateReport openReport"
   },
   "cypress-cucumber-preprocessor": {
     "json": {
       "enabled": true,
-      "output": "cypress/cucumberReports/report.json"
+      "output": "cypress/reports/report.json"
     }
   },
   "author": "",
