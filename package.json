@@ -4,7 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "navigateProjectPath": "cd /Users/thekid810/Automation/PracticeTest",
+    "runTestcase": "npx cypress run --spec cypress/integration/googlePractice/*.feature",
+    "generateReport": "node cucumber-html-report.js",
+    "openReport": "open /Users/thekid810/Automation/PracticeTest/cypress/cucumberReports/report.html/index.html"
   },
   "cypress-cucumber-preprocessor": {
     "json": {
