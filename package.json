@@ -6,6 +6,7 @@
   "scripts": {
     "navigateProjectPath": "cd /Users/thekid810/Automation/PracticeTest",
     "runTestcase": "npx cypress run --spec cypress/integration/googlePractice/*.feature",
+    "runTestcaseAndSaveReportToCypressDashboard": "npx cypress run --record --key fa4f0e00-8ffa-4f59-ac6b-78c200b08228",
     "generateReport": "node cucumber-html-report.js",
     "openReport": "open /Users/thekid810/Automation/PracticeTest/cypress/cucumberReports/report.html/index.html"
   },
