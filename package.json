@@ -4,11 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "navigateProjectPath": "cd /Users/thekid810/Automation/PracticeTest",
-    "runTestcase": "npx cypress run --spec cypress/integration/googlePractice/*.feature",
-    "runTestcaseAndSaveReportToCypressDashboard": "npx cypress run --record --key fa4f0e00-8ffa-4f59-ac6b-78c200b08228",
+    "runTestcase": "npx cypress run --record --key fa4f0e00-8ffa-4f59-ac6b-78c200b08228",
     "generateReport": "node cucumber-html-report.js",
-    "openReport": "open /Users/thekid810/Automation/PracticeTest/cypress/cucumberReports/report.html/index.html"
+    "openReport": "open cypress/cucumberReports/report.html/index.html",
+    "scenario": "run-s runTestcase generateReport openReport"
   },
   "cypress-cucumber-preprocessor": {
     "json": {
@@ -24,6 +23,7 @@
   "dependencies": {
     "@badeball/cypress-cucumber-preprocessor": "^15.1.1",
     "@cypress/browserify-preprocessor": "^3.0.2",
-    "multiple-cucumber-html-reporter": "^3.1.0"
+    "multiple-cucumber-html-reporter": "^3.1.0",
+    "npm-run-all": "^4.1.5"
   }
 }
