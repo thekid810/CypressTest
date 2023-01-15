@@ -9,7 +9,7 @@ Structure of this Project
 1. All testcase put on this folder “integration/GooglePractice”
 2. All define test step and test setup of testcase put on this folder “integration/GooglePractice/testcase01”
 3. All Page Objects put on this folder “integration/pageObjects”
-4. Report will generate in “cucumberReports” folder
+4. Report will generate in “reports/cucumberReport” folder
 5. Parameters/Test data put on fixtures folder
 
 Command to run test: 
