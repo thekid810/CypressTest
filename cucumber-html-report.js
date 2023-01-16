@@ -10,7 +10,7 @@ report.generate({
         },
         device: 'Local test machine',
         platform: {
-            name: 'MacOS',
+            name: 'Mac OS',
             version: '12.5'
         }
     },
@@ -19,9 +19,7 @@ report.generate({
         data: [
             {label: 'Project', value: 'Practice Test'},
             {label: 'Release', value: '1.0.0'},
-            {label: 'Cycle', value: 'B11221.34321'},
-            {label: 'Execution Start Time', value: 'Jan 15th 2023, 02:31 PM EST'},
-            {label: 'Execution End Time', value: 'Jan 15th 2013, 02:56 PM EST'}
+            {label: 'Cycle', value: 'C0001'},
         ]
     }
 });

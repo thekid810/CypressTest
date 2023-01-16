@@ -16,7 +16,7 @@ module.exports = defineConfig(
 {
   projectId: 'whyv92',
   env: {
-    url : "www.google.com"
+    url : "http://localhost:8080"
   },
   e2e: {
     setupNodeEvents,

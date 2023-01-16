@@ -8,8 +8,8 @@
     "runTestcase": "npx cypress run --record --key fa4f0e00-8ffa-4f59-ac6b-78c200b08228",
     "runTestcaseInLocal": "npx cypress run --spec cypress/integration/contourTest/*.feature",
     "generateReport": "node cucumber-html-report.js",
-    "openReport": "open cypress/reports/cucumberReport/index.html",
-    "scenario": "run-s runTestcaseInLocal generateReport openReport"
+    "openReportInMacOS": "open cypress/reports/cucumberReport/index.html",
+    "scenario": "run-s -c runTestcaseInLocal generateReport openReportInMacOS"
   },
   "cypress-cucumber-preprocessor": {
     "json": {
