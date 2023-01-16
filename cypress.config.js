@@ -20,7 +20,6 @@ module.exports = defineConfig(
   },
   e2e: {
     setupNodeEvents,
-    // specPattern: 'cypress/integration/googlePractice/*.js'
-    specPattern: 'cypress/integration/googlePractice/*.feature'
+    specPattern: 'cypress/integration/contourTest/*.feature'
   },
 });
