@@ -12,5 +12,9 @@ class HomePage
     {
         return cy.get('[href="/view-member"]')
     }
+    getHomeTab()
+    {
+        return cy.get('[href="/home"]')
+    }
 }
 export default HomePage;
