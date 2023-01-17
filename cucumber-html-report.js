@@ -5,13 +5,13 @@ report.generate({
 	reportPath: 'cypress/reports/cucumberReport',
 	metadata:{
         browser: {
-            name: 'chrome',
-            version: '108'
+            name: '',
+            version: ''
         },
         device: 'Local test machine',
         platform: {
-            name: 'Mac OS',
-            version: '12.5'
+            name: '',
+            version: ''
         }
     },
     customData: {

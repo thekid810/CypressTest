@@ -16,6 +16,12 @@
 // Import commands.js using ES2015 syntax:
 import './commands'
 import "cypress-cucumber-attach-screenshots-to-failed-steps"
+beforeEach(() =>{
+    cy.fixture('TestData').then(function(data)
+        {
+            this.data=data                     
+        })
+})
 // Alternatively you can use CommonJS syntax:
 // require('./commands')
 // const resizeObserverLoopErrRe = /^[^(ResizeObserver loop limit exceeded)]/;

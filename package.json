@@ -6,10 +6,14 @@
   "scripts": {
     "openCypress": "node_modules/.bin/cypress open",
     "runTestcase": "npx cypress run --record --key fa4f0e00-8ffa-4f59-ac6b-78c200b08228",
-    "runTestcaseInLocal": "npx cypress run --spec cypress/integration/contourTest/*.feature",
+    "runTestcaseInLocalInFirefox": "npx cypress run --browser firefox --headless --spec cypress/integration/contourTest/*.feature",
+    "runTestcaseInLocalInChrome": "npx cypress run --browser chrome --headless --spec cypress/integration/contourTest/*.feature",
+    "runTestcaseInLocalInEdge": "npx cypress run --browser edge --headless --spec cypress/integration/contourTest/*.feature",
     "generateReport": "node cucumber-html-report.js",
     "openReportInMacOS": "open cypress/reports/cucumberReport/index.html",
-    "scenario": "run-s -c runTestcaseInLocal generateReport openReportInMacOS"
+    "scenarioInFirefox": "run-s -c runTestcaseInLocalInFirefox generateReport",
+    "scenarioInChrome": "run-s -c runTestcaseInLocalInChrome generateReport",
+    "scenarioInEdge": "run-s -c runTestcaseInLocalInEdge generateReport"
   },
   "cypress-cucumber-preprocessor": {
     "json": {
