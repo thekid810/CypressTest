@@ -21,5 +21,7 @@ Command to run test:
     npm run scenarioInFirefox
     npm run scenarioInEdge
 Note: 
-1.  The Report will be generated folder "Your Project location\cypress\cucumberReports\report.html\index.html"
-2.  Some Macbooks orrcur the error when generating report due to Permission Denied, if you see the error in your machine, please follow the link to fix https://github.com/cucumber/json-formatter/issues/24
+1.  I uses 2 templates report(Cypress and Cucumber). The Report will be generated in folder:
+    Cucumber Report: "Your Project location\cypress\reports\cucumberReport\index.html"
+    Cypress Report: "Your Project location\cypress\reports\cypressReport\report.html"
+2.  Some Macbooks orrcur the error when generating cucumber report due to Permission Denied, if you see the error in your machine, please follow the link to fix https://github.com/cucumber/json-formatter/issues/24

@@ -11,11 +11,13 @@ var id=0
 Given('I am at home page', function()
 {
     cy.visit(Cypress.env('url'))
+    cy.screenshot()
 })
 When('I click Add Member tab', function()
 {
     homePage.getAddMemberTab().click()
     cy.url().should('eq', 'http://localhost:8080/add-member')
+    cy.screenshot()
 })
 When('I input all fields and click Submit', function()
 {
@@ -28,6 +30,7 @@ When('I input all fields and click Submit', function()
     addMemberPage.getTxtEmail().type(this.data.email[0])
     addMemberPage.getChkboxIagree().check()
     addMemberPage.getBtnSubmit().click()
+    cy.screenshot()
 })
 Then('I add member successful', function()
 {
@@ -38,6 +41,7 @@ Then('I add member successful', function()
         id = text.split(':')[1].split('C')[0]
         cy.log(id)
     })
+    cy.screenshot()
 })
 When('I input all fields but the phone number is wrong format and click Submit', function()
 {
@@ -50,12 +54,14 @@ When('I input all fields but the phone number is wrong format and click Submit',
     addMemberPage.getTxtEmail().type(this.data.email[1])
     addMemberPage.getChkboxIagree().check()
     addMemberPage.getBtnSubmit().click()
+    cy.screenshot()
 })
 Then('I can not add member', function()
 {
     addMemberPage.getToastMessage().should((toastrmsg) => {
         expect(toastrmsg, "The successful toast message should not be displayed").not.be.visible;
     })
+    cy.screenshot()
 })
 
 When('I click View Member tab', function()
@@ -68,6 +74,7 @@ When('I enter ID then click Search button', function()
     //Enter ID then click Search
     viewMemberPage.getTxtSearch().type(id)
     viewMemberPage.getBtnSearch().click()
+    cy.screenshot()
 })
 Then('I see all informations of member', function()
 {
@@ -79,4 +86,5 @@ Then('I see all informations of member', function()
     viewMemberPage.getTxtPhone().should('have.text',this.data.phone[0])
     viewMemberPage.getTxtWebsite().should('have.text',this.data.website[0])
     viewMemberPage.getTxtEmail().should('have.text',this.data.email[0])
+    cy.screenshot()
 })
