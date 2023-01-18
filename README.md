@@ -1,10 +1,9 @@
 # PracticeTest
-# Cypress Note
 
-Before run scripts:
-1. Install Node.js
+Before run scenario:
+1. Install NodeJS
 2. open cmd or terminal and type: 
-    npm install npm-run-all
+    npm i
 
 Structure of this Project
 1. All testcase put on this folder:
@@ -18,15 +17,25 @@ Structure of this Project
     “reports” folder
 5. Test data put on fixtures folder
 
-Command to run test: 
-1. Copy/download Project to your PC
-2. Open terminal(in MacOS) or cmd(in Window)) and change directory to folder that contains project then type this command(Make sure your system installed web browser that you want to run):
+Run scenario: 
+1. Install web browser that you want to test
+2. Open terminal(in MacOS) or cmd(in Window)) and change directory to folder that contains project then type this command:
     npm run scenarioInChrome
     npm run scenarioInFirefox
     npm run scenarioInEdge
-    
-Note: 
-1.  I uses 2 templates report(Cypress and Cucumber). The Report will be generated in folder:
+
+Test Scenario (2 testcases):
+1. Add and View Member:
+    User add member with valid values -> Verify that user can add member
+    User and member with invalid values(For example: user input phone number with wrong fomat, phone number should be digits) -> Verify that user can not add member. This testcase is bug because user can add member.
+    User input ID that he/she created to view member -> Verify that all informations of member are corrected
+2. Search member: 
+    User input string that exsiting -> Verify information's member is displayed in the list
+    User input string that non-exsiting -> Verify the list is empty
+
+Report:
+I use 2 templates report(Cypress Report and Cucumber Report). The Report will be generated in folder:
     Cucumber Report: "Your Project location\cypress\reports\cucumberReport\index.html"
     Cypress Report: "Your Project location\cypress\reports\cypressReport\report.html"
-2.  Some Macbooks have the error when generating cucumber report due to Permission Denied, if you see the error in your machine, please follow the link to fix https://github.com/cucumber/json-formatter/issues/24
+
+Note: Some MacOS have the error when generating cucumber report due to Permission Denied, if you see the error in your machine, please follow the link to fix https://github.com/cucumber/json-formatter/issues/24

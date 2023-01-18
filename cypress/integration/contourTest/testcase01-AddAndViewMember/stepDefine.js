@@ -68,6 +68,7 @@ When('I click View Member tab', function()
 {
     homePage.getViewMemberTab().click()
     cy.url().should('eq', 'http://localhost:8080/view-member')
+    cy.screenshot()
 })
 When('I enter ID then click Search button', function()
 {
