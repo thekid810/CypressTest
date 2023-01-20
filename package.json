@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "openCypress": "node_modules/.bin/cypress open",
+    "openCypress": "npx cypress open",
     "runTestcase": "npx cypress run --record --key fa4f0e00-8ffa-4f59-ac6b-78c200b08228",
-    "runTestcaseInLocal": "npx cypress run --spec cypress/integration/googlePractice/*.feature",
+    "runTestcaseInLocal": "npx cypress run --spec cypress/integration/googlePractice/**/*.feature",
     "generateReport": "node cucumber-html-report.js",
     "openReport": "open cypress/reports/cucumberReport/index.html",
     "scenario": "run-s runTestcase generateReport openReport"
@@ -15,12 +15,17 @@
     "json": {
       "enabled": true,
       "output": "cypress/reports/report.json"
+    },
+    "html": {
+      "enabled": true,
+      "output": "cypress/reports/cypressReport/report.html"
     }
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "cypress": "^12.3.0"
+    "cypress": "^12.3.0",
+    "cypress-cucumber-attach-screenshots-to-failed-steps": "^1.0.0"
   },
   "dependencies": {
     "@badeball/cypress-cucumber-preprocessor": "^15.1.1",
