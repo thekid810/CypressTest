@@ -21,6 +21,6 @@ module.exports = defineConfig(
   e2e: {
     setupNodeEvents,
     video: false,
-    specPattern: 'cypress/integration/contourTest/*.feature'
+    specPattern: 'cypress/integration/PracticeTest/*.feature'
   },
 });
