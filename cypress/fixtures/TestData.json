@@ -1,9 +1,18 @@
 {
-    "firstName" : ["Hung"                   , "Thao"                   ],
-    "lastName"  : ["Dang"                   , "Nguyen"                 ],
-    "title"     : ["QA"                     , "Dev"                    ],
-    "company"   : ["Contour"                , "Contour"                ],
-    "phone"     : ["0999999999"             , "abc123456"              ],
-    "website"   : ["https://contour.network", "https://contour.network"],
-    "email"     : ["test01@contour.network" , "test01@contour.network" ]
+    "departingTime": [
+        "December",
+        "July"
+    ],
+    "returningTime": [
+        "July",
+        "December (two years from now)"
+    ],
+    "promotionalCode": [
+        "AF3-FJK-418",
+        "JJ5-OPQ-320"
+    ],
+    "messageContent": [
+        "Unfortunately, this schedule is not possible. Please try again.",
+        "Seats available!Call now on 0800 MARSAIR to book!"
+    ]
 }

@@ -14,13 +14,12 @@ async function setupNodeEvents(on, config) {
 
 module.exports = defineConfig(
 {
-  projectId: 'whyv92',
   env: {
-    url : "http://localhost:8080"
+    url : "https://marsair.recruiting.thoughtworks.net/HungDangPhi"
   },
   e2e: {
     setupNodeEvents,
     video: false,
-    specPattern: 'cypress/integration/PracticeTest/*.feature'
+    specPattern: 'cypress/e2e/PracticeTest/*.feature'
   },
 });
