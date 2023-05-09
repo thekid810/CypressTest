@@ -9,9 +9,9 @@
     "runTestcaseInLocalInEdge": "npx cypress run --browser edge --headless --spec cypress/e2e/PracticeTest/**/*.feature",
     "generateReport": "node cucumber-html-report.js",
     "openReportInMacOS": "open cypress/reports/cucumberReport/index.html",
-    "scenarioInFirefox": "run-s -c runTestcaseInLocalInFirefox generateReport",
-    "scenarioInChrome": "run-s -c runTestcaseInLocalInChrome generateReport",
-    "scenarioInEdge": "run-s -c runTestcaseInLocalInEdge generateReport"
+    "scenarioInFirefox": "run-s -c runTestcaseInLocalInFirefox generateReport openReportInMacOS",
+    "scenarioInChrome": "run-s -c runTestcaseInLocalInChrome generateReport openReportInMacOS",
+    "scenarioInEdge": "run-s -c runTestcaseInLocalInEdge generateReport openReportInMacOS"
   },
   "cypress-cucumber-preprocessor": {
     "json": {

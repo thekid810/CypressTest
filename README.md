@@ -7,31 +7,21 @@ Before run scenario:
 
 Structure of this Project
 1. All testcase put on this folder:
-    “integration/contourTest”
+    e2e/PracticeTest
 2. All define test step of testcase put on this folder:
-    “integration/contourTest/testcase01-AddAndViewMember”
-    “integration/contourTest/testcase02-SearchMember”
+    e2e/PracticeTest/testcase01-SearchFlights
 3. All Page Objects put on this folder:
-    “integration/pageObjects”
+    e2e/pageObjects”
 4. Report will generate in
     “reports” folder
 5. Test data put on fixtures folder
 
 Run scenario: 
 1. Install web browser that you want to test
-2. Open terminal(in MacOS) or cmd(in Window)) and change directory to folder that contains project then type this command:
+2. Open terminal(in MacOS) or cmd(in Window) and change directory to folder that contains project then type this command:
     npm run scenarioInChrome
     npm run scenarioInFirefox
     npm run scenarioInEdge
-
-Test Scenario (2 testcases):
-1. Add and View Member:
-    User add member with valid values -> Verify that user can add member
-    User and member with invalid values(For example: user input phone number with wrong fomat, phone number should be digits) -> Verify that user can not add member. This testcase is bug because user can add member.
-    User input ID that he/she created to view member -> Verify that all informations of member are corrected
-2. Search member: 
-    User input string that exsiting -> Verify information's member is displayed in the list
-    User input string that non-exsiting -> Verify the list is empty
 
 Report:
 I use 2 templates report(Cypress Report and Cucumber Report). The Report will be generated in folder:

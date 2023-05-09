@@ -1,18 +1,21 @@
 {
     "departingTime": [
-        "December",
+        "July",
+        "July",
         "July"
     ],
     "returningTime": [
-        "July",
-        "December (two years from now)"
-    ],
-    "promotionalCode": [
-        "AF3-FJK-418",
-        "JJ5-OPQ-320"
+        "December",
+        "December (two years from now)",
+        "July (next year)"
     ],
     "messageContent": [
         "Unfortunately, this schedule is not possible. Please try again.",
-        "Seats available!Call now on 0800 MARSAIR to book!"
+        "Seats available!Call now on 0800 MARSAIR to book!",
+        "Sorry, there are no more seats available."
+    ],
+    "promotionalCode": [
+        "AF3-FJK-418",
+        "AF3-FJK-417"
     ]
 }
